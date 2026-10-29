@@ -1,0 +1,13 @@
+{
+  "name": "ronana",
+  "version": "0.1.0",
+  "description": "Make and edit images and videos with Ronana, upscale video, and organize the results, through the Ronana command line.",
+  "author": {
+    "name": "Ronana",
+    "url": "https://ronana.ai"
+  },
+  "homepage": "https://ronana.ai",
+  "repository": "https://github.com/ronana-ai/skills",
+  "license": "MIT",
+  "keywords": ["ronana", "image-generation", "video-generation", "video-upscale", "prompt-writing"]
+}
