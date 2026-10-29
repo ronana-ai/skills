@@ -17,7 +17,7 @@ Ronana runs the leading image and video models behind one account. You drive it 
 
 1. Pick the model. `ronana model list --kind image` or `--kind video` lists each id with a one-line `best_for`. Each id is one endpoint: text-to-video, image-to-video and edit are separate ids.
 2. Read its contract: `ronana model get <id>`. Every field there is a flag (`--aspect_ratio 16:9`).
-3. Write the prompt with the family's guide below. Or let Ronana improve a draft: `ronana improve <id> --prompt "…"` (costs a little).
+3. Write the prompt with the family's guide below.
 4. Check the price before spending: `ronana generate cost <id> --prompt "…"`. Tell the user the credits when it is more than a few.
 5. Generate: `ronana generate create <id> --prompt "…" --out ./ronana-output`. Always pass `--out` so the result is saved; run long video jobs in the background.
 6. If a command was interrupted, nothing is lost: `ronana generate wait <id> --out ./ronana-output`.
