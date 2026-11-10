@@ -28,11 +28,12 @@ Media flags (`--image`, `--video`, `--audio`) take a local file, an https URL, o
 
 - Upscale a video: `ronana upscale <gen_…|ref_…|file> --resolution 4k --out ./ronana-output`.
 - Folders: `ronana folder list`, `ronana folder add "<folder>" <ids…>` (creates it if missing).
+- To work on what is in a folder, list it first: `ronana folder items "<folder>"` (or `ronana library --folder "<folder>" --kind images --all --json`) prints each item's id, which any media flag takes. Never ask the user to paste ids you can list.
 - `--json` on any command gives machine-readable output. `ronana --help` lists everything.
 
 ## Writing prompts
 
-Before writing a prompt, read the guide for the model's family. It is the same brief Ronana's own prompt improver follows. Where a guide mentions an `@imageN` token or a chip, it means the Nth file in the model's media field, in the order you pass them.
+Before writing a prompt, read the guide for the model's family. It is the same brief Ronana's own prompt improver follows. Where a guide mentions a chip, it means the Nth file in the model's media field, in the order you pass them.
 
 | Family | Kind | Guide |
 | --- | --- | --- |
